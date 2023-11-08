@@ -1,0 +1,192 @@
+body {
+    background-color: #100000;
+    height: 1000px;
+}
+
+.main-menu {
+    background-color: #A20F0F;
+    height: 122px;
+    position: fixed;
+    top: 0;
+    right: -12px;
+    width: 1240px;
+    z-index: 1;
+}
+
+.header .square-1 {
+    background-color: #A20F0F;
+    width: 72px;
+    height: 70px;
+    position: fixed;
+    top: -13px;
+    right: 1228px;
+}
+
+.header .square-2 {
+    width: 97px;
+    height: 97px;
+    transform: rotate(42deg);
+    background-color: #A20F0F;
+    position: fixed;
+    right: 1183px;
+    top: 5px;
+}
+
+.header .main-menu-copy {
+    background-color: #A20F0F;
+    height: 122px;
+    position: fixed;
+    top: 0;
+    right: -12px;
+    width: 1240px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 180px 40px 30px;
+    align-items: center;
+}
+
+.nav-content .logo {
+    font-weight: 800;
+    font-family: "Orbitron";
+    font-size: 26px;
+    text-shadow: 2px 2px #FF89E5, 
+    2px -2px #FF89E5,
+    -2px 2px #FF89E5,
+    -2px -2px #FF89E5;
+    color: #00B2FF;
+}
+
+.nav-content .links {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+}
+
+.nav-content .links a {
+    text-decoration: none;
+    color: #35DBF2;
+    font-size: 14px;
+    font-family: "Orbitron"; 
+    font-weight: 900;
+    text-shadow: 2px 2px black,
+    -2px 2px black,
+    2px -2px black,
+    -2px -2px black;
+}
+
+.nav-content .button {
+    width: 170px;
+    height: 44px;
+    background: linear-gradient(45deg, #8A35F2 140px, transparent 140px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF500;
+    text-shadow: 1px 1px red,
+    -1px 1px red,
+    1px -1px red,
+    -1px -1px red;
+    font-size: 14px;
+    font-family: "Orbitron";
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.white-shadow {
+    box-shadow: 0px 0px 20px 10px white;
+}
+
+.header .square-copy-1 {
+    background-color: #A20F0F;
+    width: 72px;
+    height: 57px;
+    position: fixed;
+    top: 0;
+    right: 1228px;
+    z-index: 1;
+}
+
+.header .square-copy-2 {
+    width: 97px;
+    height: 97px;
+    transform: rotate(42deg);
+    background-color: #A20F0F;
+    position: fixed;
+    right: 1183px;
+    top: 5px;
+    z-index: 1;
+}
+
+.aside .block-networks {
+    background-color: #2D5796;
+    width: 528px;
+    height: 150px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 150px;
+    transform-origin: right top;
+    transform: rotate(-90deg);
+}
+
+.aside .square-1 {
+    background-color: #2D5796;
+    height: 72px;
+    width: 85px;
+    position: fixed;
+    top: 528px;
+    right: 0;
+    z-index: 1;
+}
+
+.aside .square-2 {
+    background-color: #2D5796;
+    height: 95px;
+    width: 95px;
+    position: fixed;
+    top: 485px;
+    right: 35px;
+    transform: rotate(48deg);
+    z-index: 1;
+}
+
+.aside .block-networks-copy {
+    width: 528px;
+    height: 150px;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    right: 150px;
+    transform-origin: right top;
+    transform: rotate(-90deg);
+}
+
+.aside .square-copy-1 {
+    background-color: #2D5796;
+    height: 72px;
+    width: 85px;
+    position: fixed;
+    top: 528px;
+    right: 0;
+}
+
+.aside .square-copy-2 {
+    background-color: #2D5796;
+    height: 95px;
+    width: 95px;
+    position: fixed;
+    top: 485px;
+    right: 35px;
+    transform: rotate(48deg);
+}
+
+
+
