@@ -61,14 +61,14 @@ body {
     color: #00B2FF;
 }
 
-.nav-content .links {
+.links-navigation {
     display: flex;
     justify-content: space-between;
     width: 530px;
     align-items: center;
 }
 
-.nav-content .links a {
+.links-navigation a {
     text-decoration: none;
     color: #35DBF2;
     font-size: 14px;
@@ -81,7 +81,7 @@ body {
     text-transform: uppercase;
 }
 
-.nav-content .links a:hover {
+.links-navigation a:hover {
     text-shadow: 2px 2px black,
     -2px 2px black,
     2px -2px black,
@@ -92,7 +92,7 @@ body {
     -4px -4px 4px orange;
 }
 
-.nav-content .links a.active {
+.links-navigation a.active {
     text-shadow: 2px 2px black,
     -2px 2px black,
     2px -2px black,
@@ -309,7 +309,7 @@ body {
         right: 1243px;
     }
 
-    .nav-content .links {
+    .links-navigation {
         width: 580px;
     }
 }
@@ -377,11 +377,11 @@ body {
         font-size: 13px;
     }
 
-    .nav-content .links {
+    .links-navigation {
         width: 480px;
     }
     
-    .nav-content .links a {
+    .links-navigation a {
         text-decoration: none;
         font-size: 12px;
         font-weight: 700;
@@ -548,7 +548,7 @@ body {
         z-index: 11;
     }
 
-    .nav-content .links {
+    .links-navigation {
        flex-direction: column;
        position: fixed;
        background-color: #A20F0F;
@@ -560,7 +560,7 @@ body {
        z-index: 6;
     }
 
-    .nav-content .links a {
+    .links-navigation a {
         font-size: 16px;
     }
 
@@ -733,7 +733,7 @@ body {
         width: 150px;
     }
 
-    .nav-content .links {
+    .links-navigation {
         top: 82px;
         width: 150px;
     }
@@ -742,7 +742,7 @@ body {
         margin: 20px 50px 40px 0px;
     }
 
-    .nav-content .links a {
+    .links-navigation a {
         font-size: 14px;
     }
 
@@ -810,7 +810,7 @@ body {
         display: none; 
     }
 
-    .nav-content .links {
+    .links-navigation {
         top: 62px;
         width: 150px;
     }
@@ -935,7 +935,7 @@ body {
 }
 
 @media (max-width: 400px) {
-    .nav-content .links {
+    .links-navigation {
         width: 130px;
         height: 200px;
     }
@@ -945,7 +945,7 @@ body {
         height: 200px;
     }
 
-    .nav-content .links a {
+    .links-navigation a {
         font-size: 12px;
     }
 
@@ -1024,7 +1024,7 @@ body {
 }
 
 @media (max-width: 306px) {
-    .nav-content .links {
+    .links-navigation {
         width: 50vw;
         left: 0;
     }
@@ -1063,7 +1063,7 @@ body {
         font-size: 10px;
     }
 
-    .nav-content .links a{
+    .links-navigation a{
         font-size: 10px;
     }
 
@@ -1083,7 +1083,7 @@ body {
         height: 50px;
     }
 
-    .nav-content .links {
+    .links-navigation {
         top: 50px;
     }
 
