@@ -3,13 +3,24 @@
 let body = document.body;
 let menu = document.querySelector('.links-navigation');
 let logo = document.querySelector('.nav-content .logo');
-let square2 = document.querySelector('.header .square-copy-2');
+let button = document.querySelector('.button-contact');
+let buttonShadow = document.querySelector('.button-shadow');
+let header = document.querySelector('.header');
+let aside = document.querySelector('.aside');
 
 function changePosition() {
     if (window.innerWidth < 1050) {
-        square2.after(menu);
+        logo.after(menu);
+
+        if (window.innerWidth < 400) { 
+            header.after(button);
+            aside.before(buttonShadow);
+        } else {
+            logo.after(button);
+            button.after(buttonShadow);
+        }
     } else {
-        logo.after(menu);   
+        logo.after(menu);
     }
 }
 

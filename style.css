@@ -103,7 +103,7 @@ body {
     -4px -4px 4px orange;
 }
 
-.nav-content .button {
+.button-contact {
     width: 170px;
     height: 44px;
     background: linear-gradient(45deg, #8A35F2 140px, transparent 140px);
@@ -370,7 +370,7 @@ body {
         font-size: 20px;
     }
 
-    .nav-content .button {
+    .button-contact {
         width: 150px;
         height: 44px;
         background: linear-gradient(45deg, #8A35F2 125px, transparent 125px);
@@ -520,17 +520,17 @@ body {
 @media (max-width: 1050px) {
     .main-menu {
         width: 840px;
-        z-index: 7;
+        z-index: 5;
     }
 
     .header .square-1 {
         right: 828px;
-        z-index: 7;
+        z-index: 5;
     }
 
     .header .square-2 {
         right: 783px;
-        z-index: 7;
+        z-index: 5;
     }
 
     .header .main-menu-copy {
@@ -553,11 +553,12 @@ body {
        position: fixed;
        background-color: #A20F0F;
        width: 200px;
-       top: -138px;
+       top: 102px;
        height: 240px;
        padding: 20px;
        box-sizing: border-box;
-       z-index: 6;
+       z-index: 10;
+       right: 627px;
     }
 
     .links-navigation a {
@@ -578,6 +579,7 @@ body {
         box-shadow: 0px 0px 20px 10px white;
         top: 102px;
         right: 627px;
+        z-index: 6;
     }
 
     .nav-content .open-links {
@@ -598,21 +600,21 @@ body {
     }
 
     .aside .block-networks {
-        z-index: 10;
+        z-index: 9;
         width: 438px;
         height: 100px;
         right: 100px;
     }
 
     .aside .square-1 {
-        z-index: 9;
+        z-index: 8;
         height: 52px;
         width: 55px;
         top: 437px;
     }
     
     .aside .square-2 {
-        z-index: 9;
+        z-index: 8;
         height: 85px;
         width: 67px;
         top: 392px;
@@ -623,18 +625,18 @@ body {
         width: 438px;
         height: 100px;
         right: 100px;
-        z-index: 8;
+        z-index: 7;
     }
     
     .aside .square-copy-1 {
-        z-index: 8;
+        z-index: 7;
         height: 52px;
         width: 55px;
         top: 437px;
     }
     
     .aside .square-copy-2 {
-        z-index: 8;
+        z-index: 7;
         height: 85px;
         width: 67px;
         top: 392px;
@@ -680,6 +682,10 @@ body {
     }
 
     .white-block {
+        right: 527px;
+    }
+
+    .links-navigation {
         right: 527px;
     }
 }
@@ -736,6 +742,7 @@ body {
     .links-navigation {
         top: 82px;
         width: 150px;
+        right: 477px;
     }
 
     .nav-content {
@@ -813,6 +820,7 @@ body {
     .links-navigation {
         top: 62px;
         width: 150px;
+        left: 30px;
     }
 
     .white-block {
@@ -830,7 +838,7 @@ body {
         margin-left: 60px;
     }
     
-    .nav-content .button {
+    .button-contact {
         width: 140px;
         height: 36px;
         background-color: #8A35F2 ;
@@ -984,13 +992,13 @@ body {
         height: 90px;
     }
 
-    .nav-content .button {
+    .button-contact {
         width: 120px;
         font-size: 11px;
         position: fixed;
         left: 160px;
         top: 190px;
-        z-index: 9;
+        z-index: 8;
     }
 
     .button-shadow {
@@ -1001,7 +1009,7 @@ body {
         position: fixed;
         left: 160px;
         top: 190px;
-        z-index: 7; 
+        z-index: 6; 
     }
 
     .header .main-menu {
@@ -1051,7 +1059,7 @@ body {
         display: none; 
     }
 
-    .nav-content .button {
+    .button-contact {
         width: 50vw;
         right: 0;
         left: 50vw;
@@ -1059,7 +1067,7 @@ body {
 }
 
 @media (max-width: 260px) {
-    .nav-content .button {
+    .button-contact {
         font-size: 10px;
     }
 
@@ -1091,7 +1099,7 @@ body {
         top: 50px;
     }
 
-    .nav-content .button {
+    .button-contact {
         top: 180px;
     }
 }
