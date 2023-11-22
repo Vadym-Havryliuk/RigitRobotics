@@ -553,12 +553,16 @@ body {
        position: fixed;
        background-color: #A20F0F;
        width: 200px;
-       top: 102px;
+       top: -138px;
        height: 240px;
        padding: 20px;
        box-sizing: border-box;
        z-index: 10;
        right: 627px;
+       transition-property: top;
+       transition-duration: 1s;
+       transition-timing-function: ease-out;
+       transition-delay: 0s;
     }
 
     .links-navigation a {
@@ -576,8 +580,8 @@ body {
         background-color: #A20F0F;
         width: 200px;
         height: 240px;
-        box-shadow: 0px 0px 20px 10px white;
-        top: 102px;
+        /*box-shadow: 0px 0px 20px 10px white;*/
+        top: -138px;
         right: 627px;
         z-index: 6;
     }
