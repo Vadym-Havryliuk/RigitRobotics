@@ -1050,13 +1050,13 @@ body {
         z-index: 6; 
     }
 
-    .header .main-menu {
+    /*.header .main-menu {
         z-index: 5;
     }
 
     .header .main-menu-copy {
         z-index: 10;
-    }
+    }*/
 
     .nav-content .logo {
         font-size: 24px;

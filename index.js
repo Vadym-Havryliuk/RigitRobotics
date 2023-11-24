@@ -22,6 +22,9 @@ function changePosition() {
             logo.after(button);
             button.after(buttonShadow);
         }
+
+        menu.style.top = assignBottom();
+        whiteBlock.style.top = assignBottom();
     } else {
         logo.after(menu);
     }
