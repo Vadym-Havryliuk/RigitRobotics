@@ -559,10 +559,6 @@ body {
        box-sizing: border-box;
        z-index: 10;
        right: 627px;
-       transition-property: top;
-       transition-duration: 1s;
-       transition-timing-function: ease-out;
-       transition-delay: 0s;
     }
 
     .links-navigation a {
@@ -580,10 +576,10 @@ body {
         background-color: #A20F0F;
         width: 200px;
         height: 240px;
-        /*box-shadow: 0px 0px 20px 10px white;*/
         top: -138px;
         right: 627px;
         z-index: 6;
+        box-shadow: 0px 0px 0px 0px white;
     }
 
     .nav-content .open-links {
@@ -657,6 +653,42 @@ body {
 
     .nav-content .logo {
         font-size: 32px;
+    }
+}
+
+@keyframes to-bottom-1 {
+    to {
+        top: 102px;
+    }
+}
+
+@keyframes to-bottom-2 {
+    to {
+        top: 82px;
+    }
+}
+
+@keyframes to-bottom-3 {
+    to {
+        top: 62px;
+    }
+}
+
+@keyframes to-top-1 {
+    to {
+        top: -138px;
+    }
+}
+
+@keyframes to-top-2 {
+    to {
+        top: -158px;
+    }
+}
+
+@keyframes to-top-3 {
+    to {
+        top: -178px;
     }
 }
 
@@ -741,10 +773,11 @@ body {
         top: 82px;
         right: 477px;
         width: 150px;
+        top: -158px;
     }
 
     .links-navigation {
-        top: 82px;
+        top: -158px;
         width: 150px;
         right: 477px;
     }
@@ -822,7 +855,7 @@ body {
     }
 
     .links-navigation {
-        top: 62px;
+        top: -178px;
         width: 150px;
         left: 30px;
     }
@@ -830,6 +863,7 @@ body {
     .white-block {
         top: 62px;
         left: 30px;
+        top: -178px;
     }
 
     .nav-content {
