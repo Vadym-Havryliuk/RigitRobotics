@@ -18,6 +18,18 @@ let blockNetworksCopy = document.querySelector('.aside .block-networks-copy');
 let squareCopyOne = document.querySelector('.aside .square-copy-1');
 let squareCopyTwo = document.querySelector('.aside .square-copy-2');
 
+function removeShadow() {
+    blockNetworksCopy.classList.remove('white-shadow');
+    squareCopyOne.classList.remove('white-shadow');
+    squareCopyTwo.classList.remove('white-shadow');
+}
+
+function addShadow() {
+    blockNetworksCopy.classList.add('white-shadow');
+    squareCopyOne.classList.add('white-shadow');
+    squareCopyTwo.classList.add('white-shadow');
+}
+
 function changePosition() {
     if (window.innerWidth < 1050) {
         header.append(menu);
@@ -123,6 +135,11 @@ function transitionNavBottom() {
 
         whiteBlock.style.animationName = `to-bottom-${getHeight()}`;
         whiteBlock.style.animationDuration = '1s';
+
+        setTimeout(() => {
+            menu.style.top = '62px';
+            whiteBlock.style.top = '62px';
+        }, 1000);
     }
 }
 
@@ -158,6 +175,7 @@ function transitionNavTop() {
 }
 
 changePosition();
+removeShadow();
 
 addEventListener('resize', changePosition);
 openLinks.addEventListener('click', transitionNavBottom);
