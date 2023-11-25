@@ -674,6 +674,12 @@ body {
     }
 }
 
+@keyframes to-bottom-4 {
+    to {
+        top: 50px;
+    }
+}
+
 @keyframes to-top-1 {
     to {
         top: -138px;
@@ -689,6 +695,12 @@ body {
 @keyframes to-top-3 {
     to {
         top: -178px;
+    }
+}
+
+@keyframes to-top-4 {
+    to {
+        top: -150px;
     }
 }
 
