@@ -23,11 +23,20 @@ function changePosition() {
             button.after(buttonShadow);
         }
 
-        menu.style.top = assignBottom();
-        whiteBlock.style.top = assignBottom();
+        
     } else {
         logo.after(menu);
     }
+}
+
+function resizeTop() {
+    menu.style.top = assignTop();
+    whiteBlock.style.top = assignTop();
+}
+
+function resizeBottom() {
+    menu.style.top = assignBottom();
+    whiteBlock.style.top = assignBottom();
 }
 
 function getHeight() {
@@ -40,7 +49,7 @@ function getHeight() {
     }
 }
 
-function assignHeight() {
+function assignBottom() {
     switch(getHeight()) {
         case 1:
             return '102px';
@@ -54,7 +63,7 @@ function assignHeight() {
     }
 }
 
-function assignBottom() {
+function assignTop() {
     switch(getHeight()) {
         case 1:
             return '-138px';
@@ -72,22 +81,25 @@ function transitionNavBottom() {
     if (window.innerWidth < 1050 && window.innerWidth > 550) {
         menu.style.animationName = `to-bottom-${getHeight()}`;
         menu.style.animationDuration = '1s';
-        menu.style.animationFillMode = 'forwards';
+        //menu.style.animationFillMode = 'forwards';
 
         whiteBlock.style.animationName = `to-bottom-${getHeight()}`;
         whiteBlock.style.animationDuration = '1s';
-        whiteBlock.style.animationFillMode = 'forwards';
+        //whiteBlock.style.animationFillMode = 'forwards';
         
         openLinks.removeEventListener('click', transitionNavBottom);
+        addEventListener('resize', resizeBottom);
+        removeEventListener('resize', resizeTop);
 
         setTimeout(() => {
-            menu.style.top = assignHeight();
-            whiteBlock.style.top = assignHeight();
-            whiteBlock.style.boxShadow = '0px 0px 20px 10px white';
+            menu.style.top = assignBottom();
+            whiteBlock.style.top = assignBottom();
+        }, 1000);
 
+        setTimeout(() => {
+            whiteBlock.style.boxShadow = '0px 0px 20px 10px white';
             openLinks.addEventListener('click', transitionNavTop); 
-        }, 1100);
-           
+        }, 1100);  
     }
 }
 
@@ -98,18 +110,20 @@ function transitionNavTop() {
         menu.style.animationName = `to-top-${getHeight()}`;
         menu.style.animationDuration = '1s';
         menu.style.animationDelay = '100ms';
-        menu.style.animationFillMode = 'forwards';
+        //menu.style.animationFillMode = 'forwards';
 
         whiteBlock.style.animationName = `to-top-${getHeight()}`;
         whiteBlock.style.animationDuration = '1s';
         whiteBlock.style.animationDelay = '100ms';
-        whiteBlock.style.animationFillMode = 'forwards';
+        //whiteBlock.style.animationFillMode = 'forwards';
 
         openLinks.removeEventListener('click', transitionNavTop);
+        addEventListener('resize', resizeTop);
+        removeEventListener('resize', resizeBottom);
 
         setTimeout(() => {
-            menu.style.top = assignBottom();
-            whiteBlock.style.top = assignBottom();
+            menu.style.top = assignTop();
+            whiteBlock.style.top = assignTop();
 
             openLinks.addEventListener('click', transitionNavBottom);
         }, 1100);
