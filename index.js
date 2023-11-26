@@ -136,6 +136,12 @@ function transitionNavBottom() {
         whiteBlock.style.animationName = `to-bottom-${getHeight()}`;
         whiteBlock.style.animationDuration = '1s';
 
+        
+
+        setTimeout(() => {
+            whiteBlock.style.boxShadow = '0px 0px 20px 10px white';
+        }, 1100);
+
         setTimeout(() => {
             menu.style.top = '62px';
             whiteBlock.style.top = '62px';
