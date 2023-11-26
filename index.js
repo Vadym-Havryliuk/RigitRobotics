@@ -170,6 +170,45 @@ function transitionNavBottom() {
         setTimeout(() => {
             whiteBlock.style.boxShadow = '0px 0px 20px 10px white';
         }, 1100);
+
+        setTimeout(() => {
+            blockNetworks.style.animationName = 'aside-to-right-1';
+            blockNetworks.style.animationDuration = '1s';
+
+            squareOne.style.animationName = 'aside-to-right-2';
+            squareOne.style.animationDuration = '1s';
+
+            squareTwo.style.animationName = 'aside-to-right-3';
+            squareTwo.style.animationDuration = '1s';
+            
+            blockNetworksCopy.style.animationName = 'aside-to-right-1';
+            blockNetworksCopy.style.animationDuration = '1s';
+
+            squareCopyOne.style.animationName = 'aside-to-right-2';
+            squareCopyOne.style.animationDuration = '1s';
+
+            squareCopyTwo.style.animationName = 'aside-to-right-3';
+            squareCopyTwo.style.animationDuration = '1s';
+        }, 1500);
+
+        setTimeout(() => {
+            blockNetworks.style.left = '180px';
+            squareOne.style.left = '180px';
+            squareTwo.style.left = '238px';
+
+            blockNetworksCopy.style.left = '180px';
+            squareCopyOne.style.left = '180px';
+            squareCopyTwo.style.left = '238px';
+        }, 2500);
+
+        setTimeout(() => {
+            blockNetworksCopy.style.boxShadow = '0px 0px 20px 10px white';
+            squareCopyOne.style.boxShadow = '0px 0px 20px 10px white';
+            squareCopyTwo.style.boxShadow = '0px 0px 20px 10px white';
+
+            openLinks.removeEventListener('click', transitionNavBottom);
+            openLinks.addEventListener('click', transitionNavTop);
+        }, 2600);
     }
 }
 
@@ -200,7 +239,33 @@ function transitionNavTop() {
     }
 
     if (window.innerWidth < 550 && window.innerWidth > 400) {
+        blockNetworksCopy.style.boxShadow = '0px 0px 0px 0px white';
+        squareCopyOne.style.boxShadow = '0px 0px 0px 0px white';
+        squareCopyTwo.style.boxShadow = '0px 0px 0px 0px white';
+
+        blockNetworks.style.animationName = 'aside-to-left-1';
+        blockNetworks.style.animationDuration = '1s';
+        blockNetworks.style.animationDelay = '100ms';
+
+        squareOne.style.animationName = 'aside-to-left-2';
+        squareOne.style.animationDuration = '1s';
+        squareOne.style.animationDelay = '100ms';
+
+        squareTwo.style.animationName = 'aside-to-left-3';
+        squareTwo.style.animationDuration = '1s';
+        squareTwo.style.animationDelay = '100ms';
         
+        blockNetworksCopy.style.animationName = 'aside-to-left-1';
+        blockNetworksCopy.style.animationDuration = '1s';
+        blockNetworksCopy.style.animationDelay = '100ms';
+
+        squareCopyOne.style.animationName = 'aside-to-left-2';
+        squareCopyOne.style.animationDuration = '1s';
+        squareCopyOne.style.animetionDelay = '100ms';
+
+        squareCopyTwo.style.animationName = 'aside-to-left-3';
+        squareCopyTwo.style.animationDuration = '1s';
+        squareCopyTwo.style.animationDelay = '100ms';
     }
 }
 
