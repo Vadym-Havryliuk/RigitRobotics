@@ -136,16 +136,40 @@ function transitionNavBottom() {
         whiteBlock.style.animationName = `to-bottom-${getHeight()}`;
         whiteBlock.style.animationDuration = '1s';
 
-        
+        blockNetworks.style.animationName = 'aside-to-bottom-1';
+        blockNetworks.style.animationDuration = '1s';
 
-        setTimeout(() => {
-            whiteBlock.style.boxShadow = '0px 0px 20px 10px white';
-        }, 1100);
+        squareOne.style.animationName = 'aside-to-bottom-2';
+        squareOne.style.animationDuration = '1s';
+
+        squareTwo.style.animationName = 'aside-to-bottom-3';
+        squareTwo.style.animationDuration = '1s';
+        
+        blockNetworksCopy.style.animationName = 'aside-to-bottom-1';
+        blockNetworksCopy.style.animationDuration = '1s';
+
+        squareCopyOne.style.animationName = 'aside-to-bottom-2';
+        squareCopyOne.style.animationDuration = '1s';
+
+        squareCopyTwo.style.animationName = 'aside-to-bottom-3';
+        squareCopyTwo.style.animationDuration = '1s';
 
         setTimeout(() => {
             menu.style.top = '62px';
             whiteBlock.style.top = '62px';
+
+            blockNetworks.style.top = '62px';
+            squareOne.style.top = '212px';
+            squareTwo.style.top = '183px';
+
+            blockNetworksCopy.style.top = '62px';
+            squareCopyOne.style.top = '212px';
+            squareCopyTwo.style.top = '183px';
         }, 1000);
+
+        setTimeout(() => {
+            whiteBlock.style.boxShadow = '0px 0px 20px 10px white';
+        }, 1100);
     }
 }
 
