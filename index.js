@@ -246,26 +246,80 @@ function transitionNavTop() {
         blockNetworks.style.animationName = 'aside-to-left-1';
         blockNetworks.style.animationDuration = '1s';
         blockNetworks.style.animationDelay = '100ms';
+        blockNetworks.style.animationFillMode = 'forwards';
 
         squareOne.style.animationName = 'aside-to-left-2';
         squareOne.style.animationDuration = '1s';
         squareOne.style.animationDelay = '100ms';
+        squareOne.style.animationFillMode = 'forwards';
 
         squareTwo.style.animationName = 'aside-to-left-3';
         squareTwo.style.animationDuration = '1s';
         squareTwo.style.animationDelay = '100ms';
+        squareTwo.style.animationFillMode = 'forwards';
         
         blockNetworksCopy.style.animationName = 'aside-to-left-1';
         blockNetworksCopy.style.animationDuration = '1s';
         blockNetworksCopy.style.animationDelay = '100ms';
+        blockNetworksCopy.style.animationFillMode = 'forwards';
 
         squareCopyOne.style.animationName = 'aside-to-left-2';
         squareCopyOne.style.animationDuration = '1s';
         squareCopyOne.style.animetionDelay = '100ms';
+        squareCopyOne.style.animationFillMode = 'forwards';
 
         squareCopyTwo.style.animationName = 'aside-to-left-3';
         squareCopyTwo.style.animationDuration = '1s';
         squareCopyTwo.style.animationDelay = '100ms';
+        squareCopyTwo.style.animationFillMode = 'forwards';
+
+        setTimeout(() => {
+            blockNetworks.style.left = '30px';
+            squareOne.style.left = '30px';
+            squareTwo.style.left = '88px';
+
+            blockNetworksCopy.style.left = '30px';
+            squareCopyOne.style.left = '30px';
+            squareCopyTwo.style.left = '88px';
+        }, 1100);
+
+        setTimeout(() => {
+            whiteBlock.style.boxShadow = '0px 0px 0px 0px white';
+        }, 1200);
+
+        setTimeout(() => {
+            blockNetworks.style.animationName = 'aside-to-top-1';
+            blockNetworks.style.animationDuration = '1s';
+            blockNetworks.style.animationFillMode = 'forwards';
+
+            squareOne.style.animationName = 'aside-to-top-2';
+            squareOne.style.animationDuration = '1s';
+            squareOne.style.animationFillMode = 'forwards';
+
+            squareTwo.style.animationName = 'aside-to-top-3';
+            squareTwo.style.animationDuration = '1s';
+            squareTwo.style.animationFillMode = 'forwards';
+            
+            blockNetworksCopy.style.animationName = 'aside-to-top-1';
+            blockNetworksCopy.style.animationDuration = '1s';
+            blockNetworksCopy.style.animationFillMode = 'forwards';
+
+            squareCopyOne.style.animationName = 'aside-to-top-2';
+            squareCopyOne.style.animationDuration = '1s';
+            squareCopyOne.style.animationFillMode = 'forwards';
+
+            squareCopyTwo.style.animationName = 'aside-to-top-3';
+            squareCopyTwo.style.animationDuration = '1s';
+            squareCopyTwo.style.animationFillMode = 'forwards';
+
+            menu.style.animationName = `to-top-${getHeight()}`;
+            menu.style.animationDuration = '1200ms';
+            menu.style.animationFillMode = 'forwards';
+
+            whiteBlock.style.animationName = `to-top-${getHeight()}`;
+            whiteBlock.style.animationDuration = '1200ms';
+            whiteBlock.style.animationFillMode = 'forwards';
+        }, 2300);
     }
 }
 
