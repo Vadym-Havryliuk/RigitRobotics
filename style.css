@@ -1037,7 +1037,7 @@ body {
         
         top: -11px;
         left: 88px;
-        
+
         display: block;
         transform: rotate(45deg);
     }
@@ -1060,6 +1060,78 @@ body {
     
     .block-networks .networks .dot {
         display: none;
+    }
+}
+
+@keyframes aside-to-bottom-1 {
+    to {
+        top: 62px;
+    }
+}
+
+@keyframes aside-to-bottom-2 {
+    to {
+        top: 212px;
+    }
+}
+
+@keyframes aside-to-bottom-3 {
+    to {
+        top: 183px;
+    }
+}
+
+@keyframes aside-to-right-1 {
+    to {
+        left: 180px;
+    }
+}
+
+@keyframes aside-to-right-2 {
+    to {
+        left: 180px;
+    }
+}
+
+@keyframes aside-to-right-3 {
+    to {
+        left: 238px;
+    }
+}
+
+@keyframes aside-to-left-1 {
+    to {
+        left: 30px;
+    }
+}
+
+@keyframes aside-to-left-2 {
+    to {
+        left: 30px;
+    }
+}
+
+@keyframes aside-to-left-3 {
+    to {
+        left: 88px;
+    }
+}
+
+@keyframes aside-to-top-1 {
+    to {
+        top: -132px;
+    }
+}
+
+@keyframes aside-to-top-2 {
+    to {
+        top: 18px;
+    }
+}
+
+@keyframes aside-to-top-3 {
+    to {
+        top: -11px;
     }
 }
 
