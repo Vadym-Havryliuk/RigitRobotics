@@ -130,6 +130,8 @@ function transitionNavBottom() {
     }
 
     if (window.innerWidth < 550 && window.innerWidth > 400) {
+        openLinks.removeEventListener('click', transitionNavBottom);
+
         menu.style.animationName = `to-bottom-${getHeight()}`;
         menu.style.animationDuration = '1s';
 
@@ -206,7 +208,6 @@ function transitionNavBottom() {
             squareCopyOne.style.boxShadow = '0px 0px 20px 10px white';
             squareCopyTwo.style.boxShadow = '0px 0px 20px 10px white';
 
-            openLinks.removeEventListener('click', transitionNavBottom);
             openLinks.addEventListener('click', transitionNavTop);
         }, 2600);
     }
@@ -239,6 +240,8 @@ function transitionNavTop() {
     }
 
     if (window.innerWidth < 550 && window.innerWidth > 400) {
+        openLinks.removeEventListener('click', transitionNavTop);
+
         blockNetworksCopy.style.boxShadow = '0px 0px 0px 0px white';
         squareCopyOne.style.boxShadow = '0px 0px 0px 0px white';
         squareCopyTwo.style.boxShadow = '0px 0px 0px 0px white';
@@ -289,36 +292,38 @@ function transitionNavTop() {
 
         setTimeout(() => {
             blockNetworks.style.animationName = 'aside-to-top-1';
-            blockNetworks.style.animationDuration = '1s';
+            blockNetworks.style.animationDuration = '500ms';
             blockNetworks.style.animationFillMode = 'forwards';
 
             squareOne.style.animationName = 'aside-to-top-2';
-            squareOne.style.animationDuration = '1s';
+            squareOne.style.animationDuration = '500ms';
             squareOne.style.animationFillMode = 'forwards';
 
             squareTwo.style.animationName = 'aside-to-top-3';
-            squareTwo.style.animationDuration = '1s';
+            squareTwo.style.animationDuration = '500ms';
             squareTwo.style.animationFillMode = 'forwards';
             
             blockNetworksCopy.style.animationName = 'aside-to-top-1';
-            blockNetworksCopy.style.animationDuration = '1s';
+            blockNetworksCopy.style.animationDuration = '500ms';
             blockNetworksCopy.style.animationFillMode = 'forwards';
 
             squareCopyOne.style.animationName = 'aside-to-top-2';
-            squareCopyOne.style.animationDuration = '1s';
+            squareCopyOne.style.animationDuration = '500ms';
             squareCopyOne.style.animationFillMode = 'forwards';
 
             squareCopyTwo.style.animationName = 'aside-to-top-3';
-            squareCopyTwo.style.animationDuration = '1s';
+            squareCopyTwo.style.animationDuration = '500ms';
             squareCopyTwo.style.animationFillMode = 'forwards';
 
             menu.style.animationName = `to-top-${getHeight()}`;
-            menu.style.animationDuration = '1200ms';
+            menu.style.animationDuration = '1s';
             menu.style.animationFillMode = 'forwards';
 
             whiteBlock.style.animationName = `to-top-${getHeight()}`;
-            whiteBlock.style.animationDuration = '1200ms';
+            whiteBlock.style.animationDuration = '1s';
             whiteBlock.style.animationFillMode = 'forwards';
+
+            openLinks.addEventListener('click', transitionNavBottom);
         }, 2300);
     }
 }
